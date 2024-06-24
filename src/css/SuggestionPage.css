@@ -1,0 +1,75 @@
+.suggestion-page {
+  min-height: 100vh;
+  display: block; /* Kartları dikey bir liste şeklinde gösterir */
+}
+
+.suggestion-card {
+  width: 100%; /* Kartlar tüm genişliği kaplar */
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  margin-bottom: 20px;
+  position: relative; /* Sil butonunu mutlak konumlandırmak için */
+  border: 1px solid #ccc; /* Kart kenarlık */
+  border-radius: 5px; /* Kart köşelerini yuvarlama */
+  padding: 10px; /* Kart içeriği ile kenarlık arasına boşluk bırakır */
+  border: 2px solid #007bff;
+}
+.delete-button {
+  position: absolute;
+  align-self: center;
+  top: 30px;
+  right: 20px;
+  background-color: dodgerblue; /* Kırmızı arka plan rengi */
+  color: #fff; /* Beyaz yazı rengi */
+  border: none;
+  border-radius: 5px; /* Dikdörtgen butonun köşelerini yuvarlama */
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+}
+.delete-button:hover {
+  background-color: #cc4c35; /* Butona hover yapıldığında arka plan rengini değiştir */
+}
+
+.confirm-delete {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+.confirm-delete button {
+  margin-right: 10px;
+}
+
+.confirmation-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  width: 400px; /* Pencerenin genişliği */
+  max-width: 90%; /* Pencerenin genişliğinin maksimum %90'ını kaplar */
+  text-align: center; /* Metni ortalar */
+}
+
+.confirmation-dialog p {
+  margin-bottom: 10px;
+}
+
+.confirmation-dialog button {
+  margin-right: 10px;
+}
+
+.confirmation-dialog button:last-child {
+  margin-right: 0;
+}

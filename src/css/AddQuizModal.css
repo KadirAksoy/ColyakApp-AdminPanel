@@ -1,0 +1,44 @@
+.add-quiz-modal__form {
+  margin-top: 20px;
+}
+
+.add-quiz-modal__form-item {
+  margin-bottom: 15px;
+}
+
+.add-quiz-modal__question-list {
+  margin-top: 20px;
+}
+
+.add-quiz-modal__question {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-quiz-modal__question-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.add-quiz-modal__choices-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.add-quiz-modal__choice {
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.add-quiz-modal__choice-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}

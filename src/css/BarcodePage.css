@@ -1,0 +1,235 @@
+.barcode-page {
+  margin-left: 50px;
+
+  min-height: 100vh;
+}
+
+.barcode-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.barcode-card {
+  border: 2px solid #007bff;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 32px); /* 3 items per row */
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative; /* Yeni eklenen konteyneri bu konuma göre ayarlamak için */
+}
+
+.barcode-actions-container {
+  width: 100%;
+  margin-top: auto;
+}
+
+.barcode-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.barcode-actions button {
+  flex: 1;
+  margin: 0 4px;
+}
+
+.barcode-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* This maintains a 4:3 aspect ratio */
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.barcode-details {
+  margin-top: 24px;
+}
+
+.barcode-details h2 {
+  margin-bottom: 16px;
+}
+
+.nutritional-values {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nutritional-value {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nutritional-value div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+  padding-right: 20px; /* Add right padding */
+}
+
+.search-container input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-actions button:first-child {
+  background-color: #d9534f;
+  color: white;
+}
+
+.modal-actions button:last-child {
+  background-color: #5bc0de;
+  color: white;
+}
+
+.modal-actions button:first-child:hover {
+  background-color: #c9302c;
+}
+
+.modal-actions button:last-child:hover {
+  background-color: #31b0d5;
+}
+
+.page-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.page-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.add-barcode-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.add-barcode-button:hover {
+  background-color: #4cae4c;
+}

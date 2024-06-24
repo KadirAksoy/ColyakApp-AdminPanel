@@ -1,0 +1,22 @@
+.pdf-container {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.pdf-container .pdf-row {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.pdf-container .pdf-upload {
+  align-items: center;
+}
+
+.pdf-container .pdf-select {
+  margin-left: auto;
+}
+
+.pdf-container .pdf-select .ant-select-selector {
+  width: 200px;
+}

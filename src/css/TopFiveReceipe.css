@@ -1,0 +1,76 @@
+.receipts-container {
+  display: flex;
+  flex-wrap: nowrap; /* Kartların yatayda sığmaması durumunda kaydırma çubuğu oluşur */
+  overflow-x: auto; /* Kartlar ekranın dışına sığarsa yatay kaydırma çubuğu göster */
+  padding-bottom: 20px; /* Yatay kaydırma çubuğu için alt boşluk */
+  flex-direction: row; /* Kartları yatay olarak sırala */
+}
+
+.receipt-card {
+  list-style-type: none; /* Liste işaretlerini kaldır */
+  width: calc(
+    20% - 20px
+  ); /* Kartların genişliğini piksel cinsinden ayarla ve aralıklarını belirle */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.receipt-card h3 {
+  margin-top: 0;
+  font-size: 14px; /* Başlık boyutunu küçült */
+}
+
+.receipt-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px; /* Resim altındaki boşluğu azalt */
+}
+
+.details-button {
+  margin-top: 5px; /* Detay butonunun üstündeki boşluğu azalt */
+}
+
+.details-dropdown {
+  display: none;
+}
+
+.details-button button {
+  margin-right: 5px; /* Detay butonları arasındaki boşluğu azalt */
+}
+
+.details-button:hover .details-dropdown {
+  display: block;
+}
+
+.details-content {
+  display: none;
+}
+
+.details-button:hover + .details-content {
+  display: block;
+}
+
+.nutritional-values {
+  margin-top: 5px; /* Besin değerlerinin üstündeki boşluğu azalt */
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-around; /* Butonları eşit aralıklarla dağıtır */
+}
+
+.tab-buttons button {
+  flex: 1; /* Butonları eşit genişlikte yapar */
+  margin: 0 5px; /* İstediğiniz boşlukları ayarlayabilirsiniz */
+}
+
+.app {
+  display: flex;
+  flex-wrap: nowrap; /* Kartların yatayda sığmaması durumunda kaydırma çubuğu oluşur */
+  overflow-x: auto; /* Kartlar ekranın dışına sığarsa yatay kaydırma çubuğu göster */
+  padding-bottom: 20px; /* Yatay kaydırma çubuğu için alt boşluk */
+  flex-direction: row; /* Kartları yatay olarak sırala */
+  justify-content: space-between;
+}

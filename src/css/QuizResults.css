@@ -1,0 +1,27 @@
+.quiz-results-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Selectboxlar arasında boşluk */
+  padding: 20px;
+}
+
+.select-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: auto; /* Selectbox genişliği */
+}
+
+.select-box-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.select-box-container select {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px; /* Selectbox genişliği */
+}

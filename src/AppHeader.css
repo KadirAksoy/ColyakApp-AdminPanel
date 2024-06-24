@@ -1,0 +1,77 @@
+/* Genel ayarlar */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Uygulama başlığı */
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 64px;
+  background-color: rgb(255, 165, 0);
+}
+
+/* Logo stili */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+/* Menü stilleri */
+.app-menu {
+  flex: 1;
+  min-width: 0;
+  background-color: rgb(255, 165, 0);
+}
+
+.app-menu .ant-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* İçerik alanı */
+.content-layout {
+  padding: 24px;
+}
+
+.app-content {
+  padding: 24px;
+  border-radius: 8px;
+  min-height: 280px;
+}
+
+.ant-input,
+.ant-input-password {
+  border-radius: 4px;
+}
+
+.ant-btn-primary {
+  width: 100%;
+  border-radius: 4px;
+}
+/* Ant Design Form ve Button bileşenleri için ek stiller */
+.ant-form-item-label > label {
+  color: #000000;
+}
+/* İçerik alanı */
+.content-layout {
+  background-color: #f0f2f5;
+  padding: 24px;
+}
+.app-menu .ant-menu-item-selected {
+  background-color: #f0f2f5 !important; /* Seçili menü öğesi arka plan rengi beyaz */
+}
+
+.app-menu .ant-menu-item-selected a {
+  color: #000000 !important; /* Seçili menü öğesi yazı rengi siyah */
+}
+
+.app-content {
+  background-color: rgb(242, 216, 216);
+}
